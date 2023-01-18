@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.js">
+    <title>Natural Language Processing (NLP) Question and Answer Demo by Pragnakalp Solutions</title>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="static/css/style_bert.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form" action="{{ url_for('submitted_form') }}">
+                        <h2 class="form-title">Question And Answer Demo Using BERT NLP</h2>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="comment">Paragraph <span class="red-star">*</span></label>
+                                <textarea name="Paragraph" class="form-control" rows="7" id="comment"
+                                    required>يضاف إلى ذلك توفيرها لإمكانية نشر المواقع التي توفر معلومات نصية ورسومية في شكل قواعد بيانات وخرائط على شبكة الإنترنت وبرامج الأوفيس وإتاحة أوركوت التي تتيح الاتصال عبر الشبكة بين الأفراد ومشاركة أفلام وعروض الفيديو، علاوةً على الإعلان عن نسخ مجانية إعلانية من الخدمات التكنولوجية السابقة. يقع المقرّ الرئيسي للشركة، والذي يحمل اسم جوجل بليكس، في مدينة "ماونتن فيو" بولاية كاليفورنيا. وقد وصل عدد موظفيها الذين يعملون دوامًا كاملًا في 31 مارس عام 2009 إلى 20,164 موظفًا. تأسست هذه الشركة على يد كل من لاري بايج وسيرجي برين عندما كانا طالبين بجامعة ستانفورد. في بادئ الأمر تم تأسيس الشركة في الرابع من سبتمبر عام 1998 كشركة خاصة مملوكة لعدد قليل من الأشخاص. وفي التاسع عشر من أغسطس عام 2004، طرحت الشركة أسهمها في اكتتاب عام ابتدائي، لتجمع الشركة بعده رأس مال بلغت قيمته 1.67 مليار دولار أمريكي، وبهذه القيمة وصلت قيمة رأس مال الشركة بأكملها إلى 23 مليار دولار أمريكي. وبعد ذلك واصلت شركة جوجل ازدهارها عبر طرحها لسلسلة من المنتجات الجديدة واستحواذها على شركات أخرى عديدة والدخول في شراكات جديدة. وطوال مراحل ازدهار الشركة، كانت ركائزها المهمة هي المحافظة على البيئة وخدمة المجتمع والإبقاء على العلاقات الإيجابية بين موظفيها. ولأكثر من مرة، احتلت الشركة المرتبة الأولى في تقييم لأفضل الشركات تجريه مجلة فورتشن كما حازت بصفة أقوى مئة علامة تجارية في العالم الذي تجريه مجموعة شركات ميلوارد براون.</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputlg">Question 1 <span class="red-star">*</span></label>
+                            <input name="Question1" class="form-control input-lg" id="inputlg" type="text"
+                                value="أين يقع مقر شركة قوقل؟" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputlg">Question 2</label>
+                            <input name="Question2" class="form-control input-lg" id="inputlg" type="text"
+                                value="من قام بتأسيس شركة قوقل؟">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="inputlg">Question 3</label>
+                            <input name="Question3" class="form-control input-lg" id="inputlg" type="text"
+                                value="متى تم طرح شركة قوقل لإكتتاب؟">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputlg">Question 4</label>
+                            <input name="Question4" class="form-control input-lg" id="inputlg" type="text"
+                                value="ماهي ركائز شركة قوقل؟">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputlg">Question 5</label>
+                            <input name="Question5" class="form-control input-lg" id="inputlg" type="text"
+                                value="كم كان رأس مال شركة قوقل؟">
+                        </div>
+
+                        <div class="form-group" id="submitblock">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Submit" />
+                            <small class="help-block">
+                                It might take around 30 seconds to process your request. So kindly be patient.
+                            </small>
+                        </div>
+                    </form>
+                    <footer align="center">
+                        <p style="color: black; font-size: 15px;">Developed by : <a href="https://www.pragnakalp.com"
+                                target="_blank">Pragnakalp Techlabs </a></p>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
